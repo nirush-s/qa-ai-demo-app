@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f4f6fb;
+    margin: 0;
+    color: #333;
+}
+
+.header {
+    background: #1f2937;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.brand {
+    text-align: right;
+    color: white;
+}
+
+.brand .title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.brand .subtitle {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.container {
+    padding: 40px;
+}
+
+h2 {
+    color: #1f2937;
+}
+
+.product, ul {
+    background: white;
+    padding: 20px;
+    width: 360px;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+button, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+select {
+    background: #2563eb;
+}
+
+#cartCount {
+    font-weight: 600;
+}
+.dashboard-actions {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    gap: 12px;
+}
+
+.dashboard-actions button {
+    width: 100%;
+}
+
+button.secondary {
+    background: #6b7280;
+}
