@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="brand">
+        <div class="title">QA.AI.Academy</div>
+        <div class="subtitle">by Nirush S</div>
+    </div>
+</div>
+
+<div class="container">
+
+<h2>Products</h2>
+
+<div id="loader">Loading products...</div>
+
+<div id="productSection" style="display:none;">
+
+    <div class="product">
+        <span>QA Automation T-Shirt</span>
+        <button id="addProduct1Btn"
+                onclick="addToCart('product1','QA Automation T-Shirt')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product">
+        <span>Selenium Hoodie</span>
+        <button id="addProduct2Btn"
+                onclick="addToCart('product2','Selenium Hoodie')">
+            Add to Cart
+        </button>
+    </div>
+
+    <p id="cartCount">Cart Items: 0</p>
+
+    <!-- CART ACTION DROPDOWN -->
+    <select id="cartAction" onchange="handleCartAction()">
+        <option value="">Cart Actions</option>
+        <option value="cart">Go to Cart</option>
+        <option value="checkout">Directly Checkout</option>
+    </select>
+
+</div>
+
+</div>
+
+<script src="js/products.js"></script>
+</body>
+</html>

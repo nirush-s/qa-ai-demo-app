@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="brand">
+        <div class="title">QA.AI.Academy</div>
+        <div class="subtitle">by Nirush S</div>
+    </div>
+</div>
+
+<div class="container">
+
+<h2>Welcome to Dashboard</h2>
+
+<div class="dashboard-actions">
+    <button onclick="goToProducts()">Go to Products</button>
+    <button onclick="orderHistory()">See Your Order History</button>
+    <button class="secondary" onclick="logout()">Logout</button>
+</div>
+
+</div>
+
+<script>
+function goToProducts() {
+    window.location.href = "products.html";
+}
+
+function orderHistory() {
+    alert("Order history feature coming soon");
+}
+
+function logout() {
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
